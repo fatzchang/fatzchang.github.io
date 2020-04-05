@@ -9,7 +9,7 @@
     <meta name="description" content="大約有半年的時間我都在準備研究所的考試，最近跟室友聊天，他說現在React都在用Hook了，我才真正體會到，前端的世界變得這麼快！自己半年前在研究React時，Hook只是個剛出來不久的東西，當時我保持著觀望的態度沒有好好的了解，現在卻變成了討論的熱門話題，甚至可以說是React未來的趨勢，所以我也趁著最近接了新的專案，更新了一下技術，果然不讓我失望！ 這之前我所知道的React在React Ho">
 <meta property="og:type" content="article">
 <meta property="og:title" content="初識React Hook與useState">
-<meta property="og:url" content="http://yoursite.com/2020/04/02/about-react-hook/index.html">
+<meta property="og:url" content="https://fatzchang.github.io/2020/04/02/about-react-hook/index.html">
 <meta property="og:site_name" content="Fatz&#39;s Record">
 <meta property="og:description" content="大約有半年的時間我都在準備研究所的考試，最近跟室友聊天，他說現在React都在用Hook了，我才真正體會到，前端的世界變得這麼快！自己半年前在研究React時，Hook只是個剛出來不久的東西，當時我保持著觀望的態度沒有好好的了解，現在卻變成了討論的熱門話題，甚至可以說是React未來的趨勢，所以我也趁著最近接了新的專案，更新了一下技術，果然不讓我失望！ 這之前我所知道的React在React Ho">
 <meta property="og:locale" content="en_US">
@@ -73,8 +73,6 @@
           <li><a href="/tags/">tags</a></li>
          
           <li><a href="/categories/">categories</a></li>
-         
-          <li><a href="/projects_url">Projects</a></li>
         
       </ul>
     </span>
@@ -96,17 +94,17 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2020/04/02/about-react-hook/" target="_blank" rel="noopener"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2020/04/02/about-react-hook/&text=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2020/04/02/about-react-hook/&is_video=false&description=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=初識React Hook與useState&body=Check out this article: http://yoursite.com/2020/04/02/about-react-hook/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2020/04/02/about-react-hook/&name=初識React Hook與useState&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/2020/04/02/about-react-hook/&t=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://fatzchang.github.io/2020/04/02/about-react-hook/" target="_blank" rel="noopener"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://fatzchang.github.io/2020/04/02/about-react-hook/&text=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://fatzchang.github.io/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://fatzchang.github.io/2020/04/02/about-react-hook/&is_video=false&description=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=初識React Hook與useState&body=Check out this article: https://fatzchang.github.io/2020/04/02/about-react-hook/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://fatzchang.github.io/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://fatzchang.github.io/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://fatzchang.github.io/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://fatzchang.github.io/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://fatzchang.github.io/2020/04/02/about-react-hook/&name=初識React Hook與useState&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=https://fatzchang.github.io/2020/04/02/about-react-hook/&t=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -181,6 +179,12 @@
   </div>
 </article>
 
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
 
 
         
@@ -199,8 +203,6 @@
           <li><a href="/tags/">tags</a></li>
          
           <li><a href="/categories/">categories</a></li>
-         
-          <li><a href="/projects_url">Projects</a></li>
         
       </ul>
     </div>
@@ -211,17 +213,17 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2020/04/02/about-react-hook/" target="_blank" rel="noopener"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2020/04/02/about-react-hook/&text=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2020/04/02/about-react-hook/&is_video=false&description=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=初識React Hook與useState&body=Check out this article: http://yoursite.com/2020/04/02/about-react-hook/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2020/04/02/about-react-hook/&name=初識React Hook與useState&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/2020/04/02/about-react-hook/&t=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://fatzchang.github.io/2020/04/02/about-react-hook/" target="_blank" rel="noopener"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://fatzchang.github.io/2020/04/02/about-react-hook/&text=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://fatzchang.github.io/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://fatzchang.github.io/2020/04/02/about-react-hook/&is_video=false&description=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=初識React Hook與useState&body=Check out this article: https://fatzchang.github.io/2020/04/02/about-react-hook/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://fatzchang.github.io/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://fatzchang.github.io/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://fatzchang.github.io/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://fatzchang.github.io/2020/04/02/about-react-hook/&title=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://fatzchang.github.io/2020/04/02/about-react-hook/&name=初識React Hook與useState&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=https://fatzchang.github.io/2020/04/02/about-react-hook/&t=初識React Hook與useState" target="_blank" rel="noopener"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -258,8 +260,6 @@
           <li><a href="/tags/">tags</a></li>
          
           <li><a href="/categories/">categories</a></li>
-         
-          <li><a href="/projects_url">Projects</a></li>
         
       </ul>
     </nav>
@@ -317,6 +317,18 @@
 <!-- Baidu Analytics -->
 
 <!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'fatzblog';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
 
 
 </body>
